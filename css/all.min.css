@@ -1,0 +1,90 @@
+
+
+
+.fixed-height-box{
+
+    min-height: 415px;
+}
+@media screen and (max-width:720px) {
+    .fixed-height-box{
+        min-height: 290px;
+    }
+}
+
+.go-sass-layout{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:720px) {
+    .go-sass-layout{
+        display: block;
+    }
+}
+
+
+
+.gosaas-two-column-team-card .flex {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+.gosaas-two-column-team-card .flex .col {
+    flex: 1;
+    padding: 20px 20px;
+    
+}
+
+.gosaas-two-column-team-card .card-flex {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: -12px;
+    margin-left: -12px
+}
+
+.gosaas-two-column-team-card .card-flex .card-col {
+    padding: 20px 12px;
+    flex: 0 0 45%;
+    max-width: 50%;
+    background-color: #e12454;
+    margin: 9px;
+}
+
+.gosaas-two-column-team-card .card.testimonial-active {
+    color: #fff
+}
+
+.gosaas-two-column-team-card .tagline-wrap {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.gosaas-two-column-team-card .tagline-wrap .tagline-line {
+    width: 30px;
+    height: 2px
+}
+
+@media(max-width: 767px) {
+    .gosaas-two-column-team-card .flex.left-card .col:first-child {
+        order:2
+    }
+
+    .gosaas-two-column-team-card .flex .col {
+        flex: 0 0 100%
+    }
+
+    .gosaas-two-column-team-card .card-flex .card-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 9px 0;
+    }
+}
+
