@@ -4078,8 +4078,8 @@ a.scrollup:active {
     color: #222;
 }
 
-.social-nav  ul li a[href*="facebook.com"]:before {
-	content: "\f39e";
+.social-nav  ul li a[href*="linkedin.com/company/pstros"]:before {
+	content: "\f0e1";
 	font-family: 'Font Awesome 5 Brands';
 }
 
@@ -7459,6 +7459,12 @@ div#promotional-headline-section {
 	padding: 55px;
 }
 
+@media(max-width:992px){
+	.custom-contact-form {
+		padding: 20px;
+	}
+}
+
 #contact-form-section {
 	position: relative;
 }
@@ -8965,6 +8971,11 @@ h3.thumb-title {
 
 .tab-content-wrap {
     padding: 40px 55px;
+}
+@media(max-width:992px){
+	.tab-content-wrap {
+		padding: 30px 20px;
+	}
 }
 
 .skill-box > h3 {
