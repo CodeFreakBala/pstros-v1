@@ -1859,7 +1859,7 @@ a.skip-link  {
 # Content
 --------------------------------------------------------------*/
 #content {
-	padding: 80px 0;
+	padding: 0px 0;
 }
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1870,7 +1870,7 @@ a.skip-link  {
 }
 
 .hentry {
-	margin: 0 0 70px;
+	margin: 0 0 0px;
 }
 
 .byline,
@@ -2161,6 +2161,12 @@ article.hentry .custom-button {
 }
 .entry-content-wrapper {
 	padding: 40px;
+}
+
+@media(max-width: 600px){
+	.entry-content-wrapper {
+		padding: 15px;
+	}
 }
 
 .single-content-wraper {
@@ -3831,7 +3837,7 @@ a.scrollup:active {
 	float: left;
 	padding-left: 20px;
 	padding-right: 20px;
-	width: 70%;
+	width: 100%;
 }
 
 #sidebar-primary {
@@ -10188,6 +10194,9 @@ i.fas.fa-times-circle {
 	}
 	.swiper-container-autoheight,.swiper-container-autoheight .swiper-slide {
 		height: 392px !important;
+	}
+	.mobile-form{
+		padding-top: 0;
 	}
 }
 
