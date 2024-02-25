@@ -2485,33 +2485,7 @@
                                         /* ]]> */
     </script>
     <script type="text/javascript" src="./js/swiper-custom.min.js" id="swiper-custom-js"></script>
-    <script>
-         document.getElementById('contact-form').addEventListener('submit', submitCustomForm);
-        function submitCustomForm(event) {
-            event.preventDefault();
-            var formElement = document.getElementById('contact-form');
-
-            var formData = new FormData(formElement);
-
-            // Replace 'YOUR_GOOGLE_FORM_URL' with the actual URL of your Google Form
-            var googleFormUrl = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdbpYkbuQA73NI9UOM4U-bra4RYkh-2UN-AvNmxxRcLeGdyig/formResponse';
-
-            // Make AJAX request
-            fetch(googleFormUrl, {
-                method: 'POST',
-                body: formData,
-                mode: 'no-cors' // Use 'no-cors' mode for CORS-restricted requests
-            })
-            .then(response => {
-                document.getElementById('responseMessage').innerHTML = 'Thank you for reaching out! We have received your message and will get back to you as soon as possible';
-                formElement.reset(); // Optionally reset the form
-            })
-            .catch(error => {
-                console.error('Error submitting form:', error);
-                document.getElementById('responseMessage').innerHTML = 'Error submitting form. Please try again.';
-            });
-        }
-    </script>
+    
 </body>
 
 </html>
