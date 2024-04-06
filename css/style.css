@@ -5243,6 +5243,12 @@ a.scrollup:active {
 
 .associate-logo-item {
 	text-align: center;
+	background-color: #fff;
+	margin: 10px;
+	min-height: 155px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #associate-logo-section {
 	padding: 60px 0;
@@ -10203,5 +10209,24 @@ i.fas.fa-times-circle {
 @media(min-width:1200px){
 	.portfolio-inner-wrapper  {
 		min-height: 400px !important;
+	}
+}
+
+
+.partner_box{
+
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 150px;
+}
+.mobile_viwe_box{
+	display: flex;
+}
+@media(max-width:768px){
+	.mobile_viwe_box{
+		flex-direction: column;
+		align-items: center;
 	}
 }
