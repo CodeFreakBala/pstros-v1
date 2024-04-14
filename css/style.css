@@ -10223,6 +10223,7 @@ i.fas.fa-times-circle {
 }
 .mobile_viwe_box{
 	display: flex;
+	justify-content: center;
 }
 @media(max-width:768px){
 	.mobile_viwe_box{
