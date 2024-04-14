@@ -5244,12 +5244,13 @@ a.scrollup:active {
 .associate-logo-item {
 	text-align: center;
 	background-color: #fff;
-	margin: 10px;
+	margin: 0px;
 	min-height: 155px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 #associate-logo-section {
 	padding: 60px 0;
 }

@@ -2600,6 +2600,30 @@
             loop:true,
             autoplay:true,
             centeredSlides:true,
+            centeredSlidesBounds: true,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                    centeredSlides:true,
+                centeredSlidesBounds: true,
+
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView:1.5,
+                    spaceBetween: 20,
+                    centeredSlides:true,
+            centeredSlidesBounds: true,
+
+                },
+                // when window width is >= 640px
+                640: {
+                    spaceBetween: 70,
+                    slidesPerView: 3,
+                }
+            },
             pagination: { el: ".swiper.partner-slider.swiper-carousel-enabled .swiper-pagination", clickable: !0 }, 
             // slidesPerColumn: 2,
         });
